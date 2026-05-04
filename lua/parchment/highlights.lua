@@ -54,8 +54,8 @@ local function load_highlights(c)
   hl.WildMenu        = { fg = c.fg0, bg = c.bg4, bold = true }
 
   -- ─── Search & Selection ──────────────────────────────────────────────────
-  hl.Visual          = { bg = "#3a3328" }
-  hl.VisualNOS       = { bg = "#2e2a24" }
+  hl.Visual          = { bg = c.visual }
+  hl.VisualNOS       = { bg = c.visual }
   hl.Search          = { fg = c.bg1, bg = c.yellow }
   hl.CurSearch       = { fg = c.bg1, bg = c.orange, bold = true }
   hl.IncSearch       = { fg = c.bg1, bg = c.orange }

@@ -9,8 +9,9 @@ M.parchment = {
   bg0 = "#0f0e0d",
   bg1 = "#141312",
   bg2 = "#1a1917",
-  bg3 = "#3a3328",
+  bg3 = "#242120",   -- cursorline: just a subtle lift from bg1
   bg4 = "#272522",
+  visual = "#4a3f2f", -- visual selection: warm brown, clearly heavier than cursorline
 
   fg0 = "#d4c9a8",
   fg1 = "#b8ae90",
@@ -51,8 +52,9 @@ M["parchment-ember"] = {
   bg0 = "#16120f",
   bg1 = "#1c1714",
   bg2 = "#231e1a",
-  bg3 = "#3a3328",
+  bg3 = "#2c2620",   -- cursorline: subtle warm lift
   bg4 = "#302a22",
+  visual = "#503e28", -- visual selection: noticeably richer amber-brown
 
   fg0 = "#ddd0ac",
   fg1 = "#c2b894",
@@ -93,8 +95,9 @@ M["parchment-manuscript"] = {
   bg0 = "#f5edd8",
   bg1 = "#ede4cc",
   bg2 = "#e4d9bc",
-  bg3 = "#d8ccaa",
+  bg3 = "#ddd0b0",   -- cursorline: just a gentle shade darker than bg1
   bg4 = "#cfc398",
+  visual = "#b8a870", -- visual selection: warm golden-tan, clearly distinct, fg0 still readable on it
 
   fg0 = "#2a2018",
   fg1 = "#3d2f20",
