@@ -27,7 +27,7 @@ ochre foregrounds, and earthy syntax accents.
 **lazy.nvim**
 ```lua
 {
-  "yourusername/parchment.nvim",
+  "saeeedhany/parchment.nvim",
   priority = 1000,
   config = function()
     require("parchment").setup({
@@ -47,7 +47,7 @@ ochre foregrounds, and earthy syntax accents.
 **packer.nvim**
 ```lua
 use {
-  "yourusername/parchment.nvim",
+  "saeeedhany/parchment.nvim",
   config = function()
     require("parchment").setup({})
     vim.cmd("colorscheme parchment")
@@ -57,7 +57,7 @@ use {
 
 **vim-plug**
 ```vim
-Plug 'yourusername/parchment.nvim'
+Plug 'saeeedhany/parchment.nvim'
 " then in your init.lua:
 " require("parchment").setup({})
 " vim.cmd("colorscheme parchment")
