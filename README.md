@@ -1,94 +1,106 @@
 # parchment.nvim
 
-A family of warm, parchment-toned Neovim colorschemes — one package, three variants.
+> A family of warm, parchment-toned colorschemes for Neovim.
+> One plugin. Three variants. Built on aged-paper aesthetics.
 
-| Variant | Feel |
-|---------|------|
-| `parchment` | Deep dark — near-black warm browns, aged ink foregrounds |
-| `parchment-ember` | Slightly lighter dark — warmer backgrounds, like embers under ash |
-| `parchment-manuscript` | Light mode — cream paper backgrounds, sepia ink |
+---
+
+<!--
+  SCREENSHOTS
+  Once you have screenshots, replace this block with actual images.
+  Recommended size: 1200x700px per variant.
+
+  ![parchment](./assets/parchment.png)
+  ![parchment-ember](./assets/parchment-ember.png)
+  ![parchment-manuscript](./assets/parchment-manuscript.png)
+-->
+
+```
+[ parchment ]                    [ parchment-ember ]               [ parchment-manuscript ]
+  deep dark · warm browns          slightly lighter · ember tones    light · cream paper · sepia
+```
+
+---
+
+## Variants
+
+| Name | Background | Feel |
+|---|---|---|
+| `parchment` | dark | Near-black warm browns, aged ink |
+| `parchment-ember` | dark | A touch lighter and warmer, like embers under ash |
+| `parchment-manuscript` | light | Cream paper, sepia ink, candlelit warmth |
+
+---
+
+## Palette
+
+```
+  bg0   #0f0e0d       fg0   #d4c9a8       red      #cc3a3a
+  bg1   #141312       fg1   #b8ae90       green    #4a9e5c
+  bg2   #1a1917       fg2   #a89f88       yellow   #c8a94a
+                      fg3   #7a7060       blue     #3a8fc4
+                                          orange   #d4622a
+                                          cyan     #4aa8a1
+```
+
+---
 
 ## Installation
 
 **lazy.nvim**
+
 ```lua
 {
   "saeeedhany/parchment.nvim",
   priority = 1000,
   config = function()
-    require("parchment").setup({
-      -- all optional, shown with defaults
-      terminal_colors = true,
-      italic_comments = true,
-      italic_strings  = false,
-      bold_functions  = false,
-      transparent_bg  = false,
-      styles          = {},   -- override any highlight group
-    })
+    require("parchment").setup({})
     vim.cmd("colorscheme parchment")
   end,
 }
 ```
 
-## Switching variants
+**packer**
 
-```vim
-:colorscheme parchment
-:colorscheme parchment-ember
-:colorscheme parchment-manuscript
+```lua
+use {
+  "saeeedhany/parchment.nvim",
+  config = function()
+    require("parchment").setup({})
+    vim.cmd("colorscheme parchment")
+  end,
+}
 ```
 
-Or in Lua:
+---
+
+## Switching Variants
+
 ```lua
-vim.cmd("colorscheme parchment-ember")
+vim.cmd("colorscheme parchment")             -- deep dark
+vim.cmd("colorscheme parchment-ember")       -- lighter dark
+vim.cmd("colorscheme parchment-manuscript")  -- light mode
 ```
 
-## Lualine
+---
 
-Automatically picks up whichever variant is active:
+## Configuration
+
+All options are optional. These are the defaults:
+
 ```lua
-require("lualine").setup({
-  options = { theme = require("parchment.lualine") }
+require("parchment").setup({
+  terminal_colors = true,   -- set vim.g.terminal_color_*
+  italic_comments = true,
+  italic_strings  = false,
+  bold_functions  = false,
+  transparent_bg  = false,
+  styles          = {},     -- override any highlight group directly
 })
 ```
 
-Or pin it to a specific variant:
-```lua
-require("lualine").setup({
-  options = { theme = require("parchment.lualine").get("parchment-manuscript") }
-})
-```
+**Example with overrides:**
 
-## Accessing the palette
-
-```lua
--- Active variant
-local c = require("parchment").palette()
-
--- Specific variant
-local c = require("parchment").palette("parchment-ember")
-
--- Example: use in bufferline
-require("bufferline").setup({
-  highlights = {
-    buffer_selected = { fg = c.fg0, bold = true },
-    indicator_selected = { fg = c.orange },
-  }
-})
-```
-
-## Config options
-
-| Option | Default | Description |
-|--------|---------|-------------|
-| `terminal_colors` | `true` | Set `vim.g.terminal_color_*` |
-| `italic_comments` | `true` | Italic on comments |
-| `italic_strings` | `false` | Italic on strings |
-| `bold_functions` | `false` | Bold on functions |
-| `transparent_bg` | `false` | Clear Normal background |
-| `styles` | `{}` | Override any highlight group |
-
-Example with overrides:
 ```lua
 require("parchment").setup({
   italic_comments = false,
@@ -99,24 +111,89 @@ require("parchment").setup({
 })
 ```
 
-## File structure
+---
+
+## Lualine
+
+Automatically adapts to whichever variant is active:
+
+```lua
+require("lualine").setup({
+  options = { theme = require("parchment.lualine") },
+})
+```
+
+Pin to a specific variant regardless of active colorscheme:
+
+```lua
+require("lualine").setup({
+  options = {
+    theme = require("parchment.lualine").get("parchment-manuscript"),
+  },
+})
+```
+
+---
+
+## Using the Palette
+
+Access colors directly for use in other plugins:
+
+```lua
+-- active variant
+local c = require("parchment").palette()
+
+-- specific variant
+local c = require("parchment").palette("parchment-ember")
+
+-- example: bufferline
+require("bufferline").setup({
+  highlights = {
+    buffer_selected    = { fg = c.fg0, bold = true },
+    indicator_selected = { fg = c.orange },
+  },
+})
+```
+
+---
+
+## Plugin Support
+
+```
+Core              Completion        Git               Navigation
+────────────────  ────────────────  ────────────────  ────────────────
+Treesitter        nvim-cmp          GitSigns          Telescope
+LSP diagnostics   Lualine           Diff highlights   Flash / Hop / Leap
+Semantic tokens   Which-key         Neo-tree          Navic
+Inlay hints       Trouble           nvim-tree
+Terminal colors   nvim-notify
+                  Lazy.nvim
+                  Mason
+                  Snacks.nvim
+                  indent-blankline
+                  render-markdown
+```
+
+---
+
+## Structure
 
 ```
 parchment.nvim/
 ├── colors/
-│   ├── parchment.lua             -- :colorscheme parchment
-│   ├── parchment-ember.lua       -- :colorscheme parchment-ember
-│   └── parchment-manuscript.lua  -- :colorscheme parchment-manuscript
+│   ├── parchment.lua
+│   ├── parchment-ember.lua
+│   └── parchment-manuscript.lua
 └── lua/parchment/
-    ├── init.lua       -- setup(), _load(), palette()
-    ├── palettes.lua   -- all three palettes
-    ├── highlights.lua -- shared highlight groups
-    ├── terminal.lua   -- terminal color mappings
-    └── lualine.lua    -- lualine theme (all variants)
+    ├── init.lua          setup(), _load(), palette()
+    ├── palettes.lua      all three color palettes
+    ├── highlights.lua    shared highlight definitions
+    ├── terminal.lua      terminal color mappings
+    └── lualine.lua       lualine theme (all variants)
 ```
 
-## Supported plugins
+---
 
-Telescope, nvim-cmp, GitSigns, Neo-tree, nvim-tree, Which-key, Trouble,
-nvim-notify, Noice, Snacks.nvim, Lazy.nvim, Mason, Navic, Flash, Hop, Leap,
-indent-blankline, render-markdown, Lualine, and terminal colors.
+## License
+
+MIT
