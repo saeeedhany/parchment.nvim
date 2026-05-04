@@ -176,24 +176,6 @@ Terminal colors   nvim-notify
 
 ---
 
-## Structure
-
-```
-parchment.nvim/
-├── colors/
-│   ├── parchment.lua
-│   ├── parchment-ember.lua
-│   └── parchment-manuscript.lua
-└── lua/parchment/
-    ├── init.lua          setup(), _load(), palette()
-    ├── palettes.lua      all three color palettes
-    ├── highlights.lua    shared highlight definitions
-    ├── terminal.lua      terminal color mappings
-    └── lualine.lua       lualine theme (all variants)
-```
-
----
-
 ## License
 
 MIT
