@@ -1,20 +1,34 @@
 --[[
   parchment.nvim
-  A warm, dark colorscheme built on aged-paper tones.
+  A family of warm, parchment-toned colorschemes.
+
+  Variants:
+    parchment            — original deep dark (near-black warm browns)
+    parchment-ember      — slightly lighter/warmer dark (like embers under ash)
+    parchment-manuscript — light mode (cream paper, sepia ink)
 
   Usage:
     vim.cmd("colorscheme parchment")
+    vim.cmd("colorscheme parchment-ember")
+    vim.cmd("colorscheme parchment-manuscript")
 
   Optional config (call before loading colorscheme):
     require("parchment").setup({
-      terminal_colors = true,   -- set vim.g.terminal_color_*
-      italic_comments = true,   -- italic on Comment/@comment
-      italic_strings  = false,  -- italic on strings
-      bold_functions  = false,  -- bold on Function/@function
-      transparent_bg  = false,  -- clear Normal bg (for transparent terminals)
-      styles = {
-        -- override any group style, e.g. comments = { italic = false }
-      },
+      terminal_colors = true,
+      italic_comments = true,
+      italic_strings  = false,
+      bold_functions  = false,
+      transparent_bg  = false,
+      styles          = {},
+    })
+
+  Lualine:
+    require("lualine").setup({
+      options = { theme = require("parchment.lualine") }
+    })
+    -- or for a specific variant:
+    require("lualine").setup({
+      options = { theme = require("parchment.lualine").get("parchment-ember") }
     })
 --]]
 
@@ -43,28 +57,38 @@ function M.setup(opts)
   M.config = vim.tbl_deep_extend("force", M.config, opts or {})
 end
 
-function M.load()
-  local palette    = require("parchment.palette")
+-- Internal loader — called by each colors/*.lua file
+---@param variant string  e.g. "parchment", "parchment-ember", "parchment-manuscript"
+function M._load(variant)
+  local palettes   = require("parchment.palettes")
   local highlights = require("parchment.highlights")
   local terminal   = require("parchment.terminal")
 
-  local c = palette.colors
+  local c = palettes[variant]
+  if not c then
+    vim.notify(
+      string.format("[parchment.nvim] Unknown variant '%s'", variant),
+      vim.log.levels.ERROR
+    )
+    return
+  end
 
-  -- Validate we have a real GUI capable terminal
+  -- Deep-copy so transparent_bg doesn't mutate the shared palette table
+  c = vim.deepcopy(c)
+
   if vim.fn.has("termguicolors") == 1 then
     vim.opt.termguicolors = true
   end
 
-  vim.opt.background = "dark"
-  vim.g.colors_name  = "parchment"
+  -- manuscript is light, everything else is dark
+  vim.opt.background = (variant == "parchment-manuscript") and "light" or "dark"
+  vim.g.colors_name  = variant
 
-  -- Clear any existing highlights
   vim.cmd("highlight clear")
-  if vim.fn.exists("syntax_on") then
+  if vim.fn.exists("syntax_on") == 1 then
     vim.cmd("syntax reset")
   end
 
-  -- Apply style overrides to palette before passing it around
   if M.config.transparent_bg then
     c.bg1 = "NONE"
   end
@@ -75,31 +99,31 @@ function M.load()
     terminal.apply(c)
   end
 
-  -- Post-process user style overrides from config.styles
   for group, style in pairs(M.config.styles) do
     vim.api.nvim_set_hl(0, group, style)
   end
 
-  -- Italic / bold toggles for the most common asks
   if not M.config.italic_comments then
     vim.api.nvim_set_hl(0, "Comment",  { fg = c.fg2 })
     vim.api.nvim_set_hl(0, "@comment", { fg = c.fg2 })
   end
 
   if M.config.italic_strings then
-    vim.api.nvim_set_hl(0, "String",   { fg = c.green, italic = true })
-    vim.api.nvim_set_hl(0, "@string",  { fg = c.green, italic = true })
+    vim.api.nvim_set_hl(0, "String",  { fg = c.green, italic = true })
+    vim.api.nvim_set_hl(0, "@string", { fg = c.green, italic = true })
   end
 
   if M.config.bold_functions then
-    vim.api.nvim_set_hl(0, "Function",   { fg = c.blue, bold = true })
-    vim.api.nvim_set_hl(0, "@function",  { fg = c.blue, bold = true })
+    vim.api.nvim_set_hl(0, "Function",  { fg = c.blue, bold = true })
+    vim.api.nvim_set_hl(0, "@function", { fg = c.blue, bold = true })
   end
 end
 
--- Convenience: return the palette for use in e.g. lualine configs
-function M.palette()
-  return require("parchment.palette").colors
+-- Convenience: return palette for a variant (defaults to active colorscheme)
+---@param variant? string
+function M.palette(variant)
+  variant = variant or vim.g.colors_name or "parchment"
+  return require("parchment.palettes")[variant]
 end
 
 return M
