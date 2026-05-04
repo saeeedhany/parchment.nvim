@@ -42,6 +42,8 @@
 
 </details>
 
+Screenshots are taken from **[Dchess](https://github.com/ddumbying/dchess)** - a small TUI chess project built for fun.
+
 ## Installation
 
 **lazy.nvim**
