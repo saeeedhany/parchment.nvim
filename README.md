@@ -162,7 +162,3 @@ Terminal colors   nvim-notify
                   indent-blankline
                   render-markdown
 ```
-
-## License
-
-MIT
