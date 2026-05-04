@@ -1,49 +1,37 @@
 <div align="center">
 
-<h1> <img src="./assets/images/parchment.png" width="80px"><br/>parchment.nvim</h1>
+<h1> <img src="./assets/images/parchment-logo.png" width="80px"><br/>parchment.nvim</h1>
 
 </div>
----
 
-<!--
-  SCREENSHOTS
-  Once you have screenshots, replace this block with actual images.
-  Recommended size: 1200x700px per variant.
+## Preview
 
-  ![parchment](./assets/parchment.png)
-  ![parchment-ember](./assets/parchment-ember.png)
-  ![parchment-manuscript](./assets/parchment-manuscript.png)
--->
+<details>
+  <summary><b>parchment (default)</b></summary>
 
-```
-[ parchment ]                    [ parchment-ember ]               [ parchment-manuscript ]
-  deep dark · warm browns          slightly lighter · ember tones    light · cream paper · sepia
-```
+<br>
 
----
+![parchment](./assets/images/parchment.png)
 
-## Variants
+</details>
 
-| Name | Background | Feel |
-|---|---|---|
-| `parchment` | dark | Near-black warm browns, aged ink |
-| `parchment-ember` | dark | A touch lighter and warmer, like embers under ash |
-| `parchment-manuscript` | light | Cream paper, sepia ink, candlelit warmth |
+<details>
+  <summary><b>parchment-ember</b></summary>
 
----
+<br>
 
-## Palette
+![parchment-ember](./assets/images/parchment-ember.png)
 
-```
-  bg0   #0f0e0d       fg0   #d4c9a8       red      #cc3a3a
-  bg1   #141312       fg1   #b8ae90       green    #4a9e5c
-  bg2   #1a1917       fg2   #a89f88       yellow   #c8a94a
-                      fg3   #7a7060       blue     #3a8fc4
-                                          orange   #d4622a
-                                          cyan     #4aa8a1
-```
+</details>
 
----
+<details>
+  <summary><b>parchment-manuscript</b></summary>
+
+<br>
+
+![parchment-manuscript](./assets/images/parchment-manuscript.png)
+
+</details>
 
 ## Installation
 
@@ -72,8 +60,6 @@ use {
 }
 ```
 
----
-
 ## Switching Variants
 
 ```lua
@@ -81,8 +67,6 @@ vim.cmd("colorscheme parchment")             -- deep dark
 vim.cmd("colorscheme parchment-ember")       -- lighter dark
 vim.cmd("colorscheme parchment-manuscript")  -- light mode
 ```
-
----
 
 ## Configuration
 
@@ -111,8 +95,6 @@ require("parchment").setup({
 })
 ```
 
----
-
 ## Lualine
 
 Automatically adapts to whichever variant is active:
@@ -132,8 +114,6 @@ require("lualine").setup({
   },
 })
 ```
-
----
 
 ## Using the Palette
 
@@ -155,8 +135,6 @@ require("bufferline").setup({
 })
 ```
 
----
-
 ## Plugin Support
 
 ```
@@ -173,8 +151,6 @@ Terminal colors   nvim-notify
                   indent-blankline
                   render-markdown
 ```
-
----
 
 ## License
 
