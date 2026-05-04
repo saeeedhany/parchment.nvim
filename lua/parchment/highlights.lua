@@ -55,7 +55,7 @@ local function load_highlights(c)
 
   -- ─── Search & Selection ──────────────────────────────────────────────────
   hl.Visual          = { bg = "#3a3328" }
-  hl.VisualNOS       = { bg = "#3a3328" }
+  hl.VisualNOS       = { bg = "#2e2a24" }
   hl.Search          = { fg = c.bg1, bg = c.yellow }
   hl.CurSearch       = { fg = c.bg1, bg = c.orange, bold = true }
   hl.IncSearch       = { fg = c.bg1, bg = c.orange }
