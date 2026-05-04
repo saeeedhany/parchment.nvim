@@ -1,8 +1,8 @@
-# parchment.nvim
+<div align="center">
 
-> A family of warm, parchment-toned colorschemes for Neovim.
-> One plugin. Three variants. Built on aged-paper aesthetics.
+<h1> <img src="./assets/images/parchment.png" width="80px"><br/>parchment.nvim</h1>
 
+</div>
 ---
 
 <!--
