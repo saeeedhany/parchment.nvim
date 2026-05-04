@@ -4,6 +4,15 @@
 
 </div>
 
+<p align="center">
+
+  <img src="https://img.shields.io/badge/Neovim-0.8%2B-4a9e5c?style=flat&labelColor=0f0e0d" />
+  <img src="https://img.shields.io/badge/License-MIT-c8a94a?style=flat&labelColor=0f0e0d" />
+  <img src="https://img.shields.io/badge/Theme-Parchment-d4c9a8?style=flat&labelColor=0f0e0d" />
+  <img src="https://img.shields.io/badge/Status-Stable-3a8fc4?style=flat&labelColor=0f0e0d" />
+
+</p>
+
 ## Preview
 
 <details>
