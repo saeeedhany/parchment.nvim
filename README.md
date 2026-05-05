@@ -165,3 +165,15 @@ Terminal colors   nvim-notify
                   indent-blankline
                   render-markdown
 ```
+
+## Note
+
+This theme started as a personal project and was later adapted for public use. It is intentionally minimal and does not aim to replicate the feature depth or visual complexity of larger themes.
+
+If you want additional integrations, stylistic variations, or more advanced features, you can extend it yourself-either by contributing to this repository or by forking it and building your own version.
+
+## Inspiration
+
+* [My personal website palette](https://saeedz.vercel.app/).
+* [Gruvbox](https://github.com/gruvbox-community/gruvbox).
+* My personal preference.
