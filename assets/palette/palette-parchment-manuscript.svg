@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="684" height="300" viewBox="0 0 684 300">
+<defs><style>
+text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+</style></defs>
+<rect x="0" y="0" width="82" height="72" rx="4" fill="#f5edd8"/>
+<text x="6" y="15" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">bg0</text>
+<text x="6" y="54" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">bg0</text>
+<text x="6" y="66" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#f5edd8</text>
+<rect x="86" y="0" width="82" height="72" rx="4" fill="#ede4cc"/>
+<text x="92" y="15" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">bg1</text>
+<text x="92" y="54" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">bg1</text>
+<text x="92" y="66" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#ede4cc</text>
+<rect x="172" y="0" width="82" height="72" rx="4" fill="#e4d9bc"/>
+<text x="178" y="15" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">bg2</text>
+<text x="178" y="54" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">bg2</text>
+<text x="178" y="66" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#e4d9bc</text>
+<rect x="258" y="0" width="82" height="72" rx="4" fill="#ddd0b0"/>
+<text x="264" y="15" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">bg3</text>
+<text x="264" y="54" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">bg3</text>
+<text x="264" y="66" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#ddd0b0</text>
+<rect x="344" y="0" width="82" height="72" rx="4" fill="#cfc398"/>
+<text x="350" y="15" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">bg4</text>
+<text x="350" y="54" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">bg4</text>
+<text x="350" y="66" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#cfc398</text>
+<rect x="430" y="0" width="82" height="72" rx="4" fill="#b8a870"/>
+<text x="436" y="15" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">visual</text>
+<text x="436" y="54" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">visual</text>
+<text x="436" y="66" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#b8a870</text>
+<rect x="516" y="0" width="82" height="72" rx="4" fill="#b0a080"/>
+<text x="522" y="15" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">muted</text>
+<text x="522" y="54" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">muted</text>
+<text x="522" y="66" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#b0a080</text>
+<rect x="602" y="0" width="82" height="72" rx="4" fill="#c8ba98"/>
+<text x="608" y="15" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">border</text>
+<text x="608" y="54" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">border</text>
+<text x="608" y="66" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#c8ba98</text>
+<rect x="0" y="76" width="82" height="72" rx="4" fill="#2a2018"/>
+<text x="6" y="91" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">fg0</text>
+<text x="6" y="130" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">fg0</text>
+<text x="6" y="142" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#2a2018</text>
+<rect x="86" y="76" width="82" height="72" rx="4" fill="#3d2f20"/>
+<text x="92" y="91" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">fg1</text>
+<text x="92" y="130" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">fg1</text>
+<text x="92" y="142" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#3d2f20</text>
+<rect x="172" y="76" width="82" height="72" rx="4" fill="#5c4a30"/>
+<text x="178" y="91" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">fg2</text>
+<text x="178" y="130" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">fg2</text>
+<text x="178" y="142" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#5c4a30</text>
+<rect x="258" y="76" width="82" height="72" rx="4" fill="#8a7050"/>
+<text x="264" y="91" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">fg3</text>
+<text x="264" y="130" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">fg3</text>
+<text x="264" y="142" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#8a7050</text>
+<rect x="344" y="76" width="82" height="72" rx="4" fill="#a82020"/>
+<text x="350" y="91" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">red</text>
+<text x="350" y="130" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">red</text>
+<text x="350" y="142" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#a82020</text>
+<rect x="430" y="76" width="82" height="72" rx="4" fill="#2e7040"/>
+<text x="436" y="91" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">green</text>
+<text x="436" y="130" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">green</text>
+<text x="436" y="142" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#2e7040</text>
+<rect x="516" y="76" width="82" height="72" rx="4" fill="#8a6818"/>
+<text x="522" y="91" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">yellow</text>
+<text x="522" y="130" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">yellow</text>
+<text x="522" y="142" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#8a6818</text>
+<rect x="602" y="76" width="82" height="72" rx="4" fill="#1e5f90"/>
+<text x="608" y="91" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">blue</text>
+<text x="608" y="130" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">blue</text>
+<text x="608" y="142" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#1e5f90</text>
+<rect x="0" y="152" width="82" height="72" rx="4" fill="#a03a10"/>
+<text x="6" y="167" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">orange</text>
+<text x="6" y="206" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">orange</text>
+<text x="6" y="218" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#a03a10</text>
+<rect x="86" y="152" width="82" height="72" rx="4" fill="#1e706a"/>
+<text x="92" y="167" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">cyan</text>
+<text x="92" y="206" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">cyan</text>
+<text x="92" y="218" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#1e706a</text>
+<rect x="172" y="152" width="82" height="72" rx="4" fill="#c84040"/>
+<text x="178" y="167" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">red_dim</text>
+<text x="178" y="206" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">red dim</text>
+<text x="178" y="218" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#c84040</text>
+<rect x="258" y="152" width="82" height="72" rx="4" fill="#3a8a50"/>
+<text x="264" y="167" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">green_dim</text>
+<text x="264" y="206" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">green dim</text>
+<text x="264" y="218" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#3a8a50</text>
+<rect x="344" y="152" width="82" height="72" rx="4" fill="#a07820"/>
+<text x="350" y="167" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">yellow_dim</text>
+<text x="350" y="206" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">yellow dim</text>
+<text x="350" y="218" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#a07820</text>
+<rect x="430" y="152" width="82" height="72" rx="4" fill="#2a70a8"/>
+<text x="436" y="167" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">blue_dim</text>
+<text x="436" y="206" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">blue dim</text>
+<text x="436" y="218" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#2a70a8</text>
+<rect x="516" y="152" width="82" height="72" rx="4" fill="#b84820"/>
+<text x="522" y="167" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">orange_dim</text>
+<text x="522" y="206" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">orange dim</text>
+<text x="522" y="218" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#b84820</text>
+<rect x="602" y="152" width="82" height="72" rx="4" fill="#208880"/>
+<text x="608" y="167" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">cyan_dim</text>
+<text x="608" y="206" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">cyan dim</text>
+<text x="608" y="218" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#208880</text>
+<rect x="0" y="228" width="82" height="72" rx="4" fill="#cfe8d0"/>
+<text x="6" y="243" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">diff_add</text>
+<text x="6" y="282" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">diff add</text>
+<text x="6" y="294" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#cfe8d0</text>
+<rect x="86" y="228" width="82" height="72" rx="4" fill="#e8e0c0"/>
+<text x="92" y="243" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">diff_change</text>
+<text x="92" y="282" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">diff change</text>
+<text x="92" y="294" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#e8e0c0</text>
+<rect x="172" y="228" width="82" height="72" rx="4" fill="#e8c8c8"/>
+<text x="178" y="243" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">diff_delete</text>
+<text x="178" y="282" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">diff delete</text>
+<text x="178" y="294" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#e8c8c8</text>
+<rect x="258" y="228" width="82" height="72" rx="4" fill="#e0d8a8"/>
+<text x="264" y="243" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.6">diff_text</text>
+<text x="264" y="282" font-size="10" font-weight="600" fill="rgba(0,0,0,0.75)">diff text</text>
+<text x="264" y="294" font-size="9" fill="rgba(0,0,0,0.75)" opacity="0.7">#e0d8a8</text>
+<rect x="344" y="228" width="82" height="72" rx="4" fill="#2e7040"/>
+<text x="350" y="243" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">git_add</text>
+<text x="350" y="282" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">git add</text>
+<text x="350" y="294" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#2e7040</text>
+<rect x="430" y="228" width="82" height="72" rx="4" fill="#8a6818"/>
+<text x="436" y="243" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">git_change</text>
+<text x="436" y="282" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">git change</text>
+<text x="436" y="294" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#8a6818</text>
+<rect x="516" y="228" width="82" height="72" rx="4" fill="#a82020"/>
+<text x="522" y="243" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.6">git_delete</text>
+<text x="522" y="282" font-size="10" font-weight="600" fill="rgba(255,255,255,0.82)">git delete</text>
+<text x="522" y="294" font-size="9" fill="rgba(255,255,255,0.82)" opacity="0.7">#a82020</text>
+</svg>

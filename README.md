@@ -21,6 +21,7 @@
 <br>
 
 ![parchment](./assets/images/parchment.png)
+![parchment](./assets/palette/palette-parchment.svg)
 
 </details>
 
@@ -30,6 +31,7 @@
 <br>
 
 ![parchment-ember](./assets/images/parchment-ember.png)
+![parchment-ember](./assets/palette/palette-parchment-ember.svg)
 
 </details>
 
@@ -39,6 +41,7 @@
 <br>
 
 ![parchment-manuscript](./assets/images/parchment-manuscript.png)
+![parchment-manuscript](./assets/palette/palette-parchment-manuscript.svg)
 
 </details>
 
